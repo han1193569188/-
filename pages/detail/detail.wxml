@@ -1,0 +1,40 @@
+<!--pages/detail/detail.wxml-->
+<view class='box'>
+  <view class='title'>
+    <text class='name'>{{company.positionName}}</text>
+    <text class='salary'>{{company.salary}}</text>
+  </view>
+  <view class='ask'>
+    <text decode='true'>学历:{{company.education}}&nbsp;&nbsp;&nbsp;</text>
+    <text>工作经验:{{company.workYear}}</text>
+  </view>
+</view>
+
+<view class='line'></view>
+
+<view class='box info'>
+  <view class='company'>
+    <view>{{company.companyFullName}}</view>       
+    <view class='time'>{{company.formatCreateTime}}</view>     
+  </view>
+  <text class='size' decode='true'>公司规模:{{company.companySize}}&nbsp;&nbsp;&nbsp;&nbsp;</text>
+  <text class='type'>公司类型:{{company.firstType}}</text>
+</view>
+<view class='box'>
+  <view class='like'>职位诱惑:</view>
+  <view class='desc'>{{company.positionAdvantage}}</view>
+</view>
+
+<view class='line'></view>
+<view class='box'>
+  <view class='location'>公司地址</view>
+  <map 
+    style='margin-top:12px;width:700rpx'
+    longitude='{{company.longitude}}'
+    latitude='{{company.latitude}}'
+    scale='14'
+    markers='{{markers}}'
+  > 
+  </map>
+</view>
+

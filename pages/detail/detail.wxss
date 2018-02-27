@@ -1,0 +1,62 @@
+/* pages/detail/detail.wxss */
+.box{
+  width: 700rpx;
+  margin: 0 auto;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20pt;
+  margin: 10px auto;
+}
+.name{
+  font-weight: bold;
+}
+.salary{
+  color: #e64340;
+  font-size: 17pt;
+  line-height: 28pt;
+}
+.ask{
+  font-size: 12px;
+}
+.line{
+  margin: 15px 0 15px;
+  width: 100%;
+  height: 15px;
+  background: #f5f5f5;
+}
+.company{
+  font-size: 13pt;
+}
+.time{
+  font-size: 11pt;
+  color: #e64340;
+  margin-bottom: 5px;
+}
+.size{
+  font-size: 12px;
+  margin-top: 5px;
+  color: #888;
+}
+.type{
+  font-size: 12px;
+  color: #888;
+}
+.info{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee ;
+}
+.like{
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.desc{
+  margin-top: 6px;
+  font-size: 12px;
+  color: #333;
+}
+.location{
+  font-size: 14pt;
+}

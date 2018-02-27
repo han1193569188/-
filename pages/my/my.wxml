@@ -1,0 +1,14 @@
+<!--pages/my/my.wxml-->
+<navigator
+ wx:for="{{fav}}"
+ wx:key="{{index}}"
+ url='/pages/detail/detail?id={{item.id}}'
+>
+  <view class='type'>
+    <text>{{item.positionName}}</text>
+    <text class='salary'>{{item.salary}}</text></view>
+  <view class='name'>{{item.companyFullName}}</view>
+  <text class='city'>{{item.city}}</text>
+  <text class='ask'>{{item.education}}/{{item.workYear}}</text>
+  <view class='desc'>{{item.positionAdvantage}}</view>
+</navigator>

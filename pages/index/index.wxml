@@ -1,0 +1,12 @@
+<!--pages/index/index.wxml-->
+<view class='box'>
+  <navigator
+    url='/pages/map/map?name={{item.name}}'
+    wx:for="{{[{name:'北京',pic:'http://localhost:8080/img/1.png'},{name:'上海',pic:'http://localhost:8080/img/2.png'},{name:'广州',pic:'http://localhost:8080/img/3.png'},{name:'深圳',pic:'http://localhost:8080/img/4.png'},{name:'杭州',pic:'http://localhost:8080/img/4.png'}]}}"
+    wx:key="{{index}}"
+    style='background-image:url({{item.pic}})'
+  >
+  <view class='name'>{{item.name}}</view>
+  </navigator>
+</view>
+
